@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<link href="https://fonts.googleapis.com/css2?family=Piedra&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="swiper.min.css">
+	<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Tenali+Ramakrishna&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arapey&display=swap" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <meta charset="utf-8">
+	
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+	
+	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script>
+		function openSlideMenu() {
+			// body...
+			document.getElementById('menu').style.width = '250px';
+			document.getElementById('content').style.marginLeft = '250px';
+		}
+
+		function closeSlideMenu() {
+			// body...
+			document.getElementById('menu').style.width = '0';
+			document.getElementById('content').style.marginLeft = '0';
+		}
+	</script>
+   
+
+	<style>
+	@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans:800');
+	body {
+	padding: 0;
+	margin: 0;
+}
+@import url("https://fonts.googleapis.com/css?family=pop pins:100,200,300,400,500,600,700,800,900");
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins',sans-serif;
+}
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	min-height: 100vh;
+	
+}
+.box {
+	position: relative;
+	width: 400px;
+	height: 400px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 40px;
+	transition: 0.5s;
+	background: #060c21;
+}
+.box:hover {
+	height: 500px;
+}
+.box .imgBx {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+}
+.box .imgBx img {
+	max-width: 100%;
+	opacity: 0.8;
+	transition: 0.5s;
+}
+.box:hover .imgBx img {
+	opacity: 1;
+
+}
+.box:before {
+	content: '';
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	right: -2px;
+	bottom: -2px;
+	background: #fff;
+	z-index: -2;
+	filter: blur(40px);
+}
+.box:before,
+.box:after {
+	background: linear-gradient(235deg,#89ff00,#010615,#00bcd4);
+}
+.box:nth-child(2):before,
+.box:nth-child(2):after {
+	background: linear-gradient(235deg,#ff005e,#010615,#fbff00);
+}
+.box:nth-child(3):before,
+.box:nth-child(3):after {
+	background: linear-gradient(235deg,#771aff,#010615,#2196F3);
+}
+.box .content {
+	position: absolute;
+	bottom: 0;
+	left: 10px;
+	right: 10px;
+	bottom: 10px;
+	right: 90px;
+	background: rgba(0,0,0,1);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	transition: 0.5s;
+}
+.box:hover .content {
+	opacity: 1;
+
+}
+.box .content h2 {
+	font-size: 20px;
+	color: #fff;
+	font-weight: 500;
+	line-height: 20px;
+	letter-spacing: 1px;
+}
+.box .content h2 span{
+	font-size: 14px;
+	color: #fff;
+	font-weight: 200;
+	
+	letter-spacing: 1px;
+}
+.middle {
+	position: relative;
+	top: 50%;
+	transform: translateY(50%);
+	text-align: center;
+	width: 100%;
+}
+.btn {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	background-color: #f1f1f1;
+	margin: 5px;
+	border-radius: 30%;
+	box-shadow: 0 5px 15px -5px #00000070;
+	color: #3498db;
+	overflow: hidden;
+	position: relative;
+
+}
+.btn i {
+	line-height: 45px;
+	font-size: 20px;
+	transition: 0.2s linear;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.btn:hover i {
+	transform: scale(1.3);
+
+	color: #f1f1f1;
+
+}
+.d1 {
+	padding: 10px;
+	transform: translateY(30%);
+}
+.btn::before {
+	content: "";
+	position: absolute;
+	width: 120%;
+	height: 120%;
+	background: #3498db;
+	transform: rotate(45deg);
+	left: -110%;
+	top: 90%;
+}
+.btn:hover::before {
+	animation: aaa 0.7s 1;
+	top: -10%;
+	left: 10%;
+}
+@keyframes aaa {
+	0% {
+		left: -110%;
+		top: 90%;
+	}
+	50% {
+		left: 10%;
+		top: -30%;
+	}
+	100% {
+		left: -10%;
+		top: -10%;
+	}
+}
+	body {
+	font-family: 'Alegreya Sans',sans-serif;
+	overflow-x: hidden;
+}
+.nav {
+	height: 100vh;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #111;
+	opacity: 0.9;
+	overflow-x: hidden;
+	padding-top: 60px;
+	transition: 0.7s;
+}
+.nav a {
+	display: block;
+	padding: 20px 30px;
+	font-size: 18px;
+	text-decoration: none;
+	color: #ccc;
+}
+.nav a select{
+	display: block;
+	padding: 20px 30px;
+	font-size: 18px;
+	text-decoration: none;
+	color: #ccc;
+}
+.nav a:hover {
+	color: #fff;
+	transition: 0.4s;
+}
+.nav .close {
+	position: absolute;
+	top: 0;
+	right: 22px;
+	margin-left: 50px;
+	font-size: 30px;
+}
+.slide a {
+	color: #000;
+	font-size: 30px;
+}
+#content {
+	padding: 20px;
+	transition: margin-left 0.7s;
+	overflow: hidden;
+	width: 100%;
+}
+select {
+	color: black;
+}
+.nav a select:hover {
+	color: #fff;
+	transition: 0.4s;
+}
+.slide a select{
+	color: #000;
+	font-size: 30px;
+}
+
+		<style>
+        h3 {
+    color: white;
+    font-size: 40px;
+    margin-top: 100px;
+    margin-left: 20px;
+}
+h4 {
+    color: white;
+    margin: 20px;
+}
+h5 {
+    color: white;
+    margin-bottom: 100px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+h2 {
+    color: rgb(0,0,0);
+    margin-left: 220px;
+    margin-top: 20px;
+}
+.c1 {
+    background-color:#edb61c;
+}
+.c2 {
+    height: 600px;
+    width: 500px;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-bottom: 20px;
+}
+.a1 {
+    border-width: 8px;
+    height: 240px;
+    border-color: #a1a09d;
+    border-radius: 20px;
+}
+p {
+    font-size: 18px;
+    font-synthesis: 20px;
+    font-family: 'Piedra', cursive;
+}
+.container .card:hover {
+    opacity: 1;
+    
+    animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+section {
+    position: relative;
+    animation: color-change 3s linear infinite
+}
+@keyframes color-change {
+    0%,100% {
+        filter: hue-rotate(0deg);
+    }
+
+    50% {
+        filter: hue-rotate(360deg);
+    }
+}
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+        @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,600,700')
+body {
+	font-family: 'Poppins',sans-serif;
+	margin: 0;
+	padding: 0;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: #383838;
+}
+.card {
+	position: relative;
+	background: #fff;
+	width: 400px;
+	height: 500px;
+	margin: 0 auto;
+}
+.card .content {
+	width: 300px;
+	padding: 30px;
+	box-sizing: border-box;
+
+}
+
+
+.card .sliderText {
+	position: relative;
+	width: 100%;
+	height: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #000;
+}
+
+.card .sliderText h3 {
+	color: #fff;
+	font-size: 3em;
+}
+.swiper-slide {
+	width: 400px;
+}
+.swiper-slide:nth-child(1) .sliderText {
+	background: #2196f3;
+}
+.swiper-slide:nth-child(2) .sliderText {
+	background: #e91e63;
+}
+.swiper-slide:nth-child(3) .sliderText {
+	background: #c3d41a;
+}
+.swiper-slide:nth-child(4) .sliderText {
+	background: #c33ada;
+}
+        
+        
+		.imag {
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	margin-left: 100px;
+	margin-top: 30px;
+	margin-bottom: 10px;
+	border: 4px solid rgb(222, 227, 235,0.8);
+}
+body {
+	padding: 20px;
+}
+.offer {
+	margin-left: 640px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color: white;
+
+}
+.num1 {
+	margin-left: 150px;
+	font-size: 40px;
+}
+.num2 {
+	margin-left: 98px;
+	font-size: 20px;
+	color: white;
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+.butt {
+	 float:left;
+	 border-width: 1px;
+	 width: 150px;
+	 margin-left: 1400px;
+	 margin-bottom: 30px;
+
+}
+h3 {
+    color: black;
+    font-size: 40px;
+    margin-top: 100px;
+    margin-left: 20px;
+}
+h4 {
+    color: black;
+    margin: 20px;
+}
+h5 {
+    color: white;
+    margin-bottom: 100px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+h2 {
+    color: rgb(0,0,0);
+    margin-left: 220px;
+    margin-top: 20px;
+}
+
+.c1 {
+    background-color:#edb61c;
+}
+.c2 {
+    height: 600px;
+    width: 500px;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-bottom: 20px;
+}
+.a1 {
+    border-width: 8px;
+    height: 240px;
+    border-color: #a1a09d;
+    border-radius: 20px;
+}
+p {
+    font-size: 18px;
+    font-synthesis: 20px;
+    font-family: 'Piedra', cursive;
+}
+#g1 {
+    opacity: 1;
+    
+    animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+section {
+    position: relative;
+    animation: color-change 3s linear infinite
+}
+@keyframes color-change {
+    0%,100% {
+        filter: hue-rotate(0deg);
+    }
+
+    50% {
+        filter: hue-rotate(360deg);
+    }
+}
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+#footer-area {
+			padding: 90px 0 60px 0;
+			background: #262626;
+			color: #fff;
+		}
+		.footer-social {
+			margin-top: 20px;
+		}
+		.single-footer h3{
+			font-weight: 500;
+			margin-bottom: 25px;
+			color: #fafafa;
+			font-family: Merienda;
+
+		}
+		.link-area li {
+			padding: 5px 5px 5px 0;
+			list-style: none;
+		}
+		.link-area li a {
+			text-transform: capitalize;
+			color: #ddd;
+			font-family: Merienda;
+		}
+		.link-area li a i {
+			margin-right: 10px;
+			color: #ddd;
+		}
+		.link-area {
+			padding: 0;
+		}
+		.single-footer p {
+			font-family: Merienda;
+
+		}
+		.footer-social li a {
+			width: 30px;
+			height: 30px;
+			display: inline-block;
+			background: #000;
+
+		}
+		.footer-social li a i {
+			color: #fff;
+			padding: 8px;
+		}
+		.widget li {
+			float: left;
+			width: 50%;
+		}
+		.widget li a img {
+			margin-bottom: -10px;
+			width: 100%;
+			height: 70px;
+		}
+		.copyright-area {
+			background: #000;
+			padding: 10px;
+			padding-left: 20px;
+			margin-top: 30px;
+			border-radius: 5px;
+		}
+		.copyright-area p {
+			font-weight: 600;
+			color: #fafafa;
+
+		}
+	</style>
+</head>
+<body>
+	
+	<div class="middle">
+    <a class="btn" href="#">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+
+    <a class="btn" href="#">
+      <i class="fab fa-twitter"></i>
+    </a>
+
+    <a class="btn" href="#">
+      <i class="fab fa-linkedin"></i>
+    </a>
+
+    <a class="d1">
+      <i><img src="http://www.srivishnu.edu.in/wp-content/uploads/2018/07/header-2.png"></i>
+    </a>
+
+    <a class="d1">
+      <i><img src="http://www.srivishnu.edu.in/wp-content/uploads/2018/07/header-1.png"></i>
+    </a>
+
+    <a class="d1">
+      <i><img src="http://www.srivishnu.edu.in/wp-content/uploads/2020/05/campusvishnu-logo.png"></i>
+    </a>
+
+    <a class="d1">
+      <i><img src="http://www.srivishnu.edu.in/wp-content/uploads/2020/05/my-bvrit.png"></i>
+    </a>
+
+  </div>
+	<div id="content">
+		<span class="slide">
+			<a href="#" onclick="openSlideMenu()">
+				<i class="fas fa-bars"></i>
+			</a>
+		</span>
+
+		<div id="menu" class="nav">
+			<a href="#" class="close" onclick="closeSlideMenu()">
+				<i class="fas fa-times"></i>
+			</a>
+			<a href="#">HOME</a>
+			<a href="#">SOCIETY</a>
+			<a href="#">CAMPUSES</a>
+			<a href="#">REASERCH AND COE</a>
+			<a href="#">CONSULTANCY</a>
+			<a href="#">COLLABORATION</a>
+			<a href="#">PLACEMENT</a>
+			<a href="#">CONTACT US</a>
+		</div>
+		
+  
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+      <li data-target="#myCarousel" data-slide-to="5"></li>
+      <li data-target="#myCarousel" data-slide-to="6"></li>
+      <li data-target="#myCarousel" data-slide-to="7"></li>
+      <li data-target="#myCarousel" data-slide-to="8"></li>
+      <li data-target="#myCarousel" data-slide-to="9"></li>
+      <li data-target="#myCarousel" data-slide-to="10"></li>
+      <li data-target="#myCarousel" data-slide-to="11"></li>
+      <li data-target="#myCarousel" data-slide-to="12"></li>
+      <li data-target="#myCarousel" data-slide-to="13"></li>
+      <li data-target="#myCarousel" data-slide-to="14"></li>
+      <li data-target="#myCarousel" data-slide-to="15"></li>
+      <li data-target="#myCarousel" data-slide-to="16"></li>
+      <li data-target="#myCarousel" data-slide-to="17"></li>
+      <li data-target="#myCarousel" data-slide-to="18"></li>
+    </ol>
+
+    
+    <div class="carousel-inner">
+      <div class="item active">
+        <section><img src="http://www.srivishnu.edu.in/wp-content/uploads/2018/10/21stJune.png"  style="height:700px;width:1700px;"></section>
+      </div>
+
+      <div class="item">
+        <section><img src="http://www.srivishnu.edu.in/wp-content/uploads/2019/11/dhruva-space-mou.jpg" style="height:100vh;width:1700px;" ></section>
+      </div>
+
+      <div class="item">
+        <section><img src="http://www.srivishnu.edu.in/wp-content/uploads/2020/03/sves-tejaswi-manogna-vanitha-datla.jpg"  style="height:700px;width:1700px;"></section>
+      </div>
+
+      <div class="item">
+        <section><img src="http://www.srivishnu.edu.in/wp-content/uploads/2020/03/viper-prothsah-2020.jpg" style="height:700px;width:1700px;"></section>
+      </div>
+
+      <div class="item">
+        <section><img src="http://www.srivishnu.edu.in/wp-content/uploads/2020/03/svcp-ipa-sc-congress.jpg"  style="height:700px;width:1700px;"></section>
+      </div>
+
+      <div class="item">
+        <section><img src="http://www.srivishnu.edu.in/wp-content/uploads/2020/03/svecw-wicsp-1024x400.jpg"  style="height:700px;width:1700px;"></section>
+      </div>
+
+      <div class="item">
+        <section><img src="http://www.srivishnu.edu.in/wp-content/uploads/2020/03/vit-coc20.jpg"  style="height:700px;width:1700px;"></section>
+      </div>
+
+      <div class="item">
+        <section><img src="http://www.srivishnu.edu.in/wp-content/uploads/2019/04/nirf-medium.jpg"  style="height:700px;width:1700px;"></section>
+      </div>
+
+       <div class="item">
+        <section><img src="http://www.srivishnu.edu.in/wp-content/uploads/2020/01/bvraju-memorial-t-2020.jpg"  style="height:700px;width:1700px;"></section>
+      </div>
+
+      <div class="item">
+        <section><img src="http://www.srivishnu.edu.in/wp-content/uploads/2020/02/sves-unb.jpg"  style="height:700px;width:1700px;"></section>
+      </div>
+
+      <div class="item">
+        <section><img src="http://www.srivishnu.edu.in/wp-content/uploads/2020/01/vikram-sarabhai-svecw.jpg"  style="height:700px;width:1700px;"></section>
+      </div>
+
+      <div class="item">
+        <section><img src="http://www.srivishnu.edu.in/wp-content/uploads/2020/01/svecw-ebaja-award-winner.jpg"  style="height:700px;width:1700px;"></section>
+      </div>
+
+      <div class="item">
+        <section><img src="http://www.srivishnu.edu.in/wp-content/uploads/2020/01/bvrit-gehealth-winner.jpg"  style="height:700px;width:1700px;"></section>
+      </div>
+
+      <div class="item">
+        <section><img src="http://www.srivishnu.edu.in/wp-content/uploads/2020/01/new-year-2020.jpg"  style="height:700px;width:1700px;"></section>
+      </div>
+
+      
+
+      <div class="item">
+        <section><img src="http://www.srivishnu.edu.in/wp-content/uploads/2019/07/mou-hcl.jpg"  style="height:700px;width:1700px;"></section>
+      </div>
+
+      <div class="item">
+        <section><img src="http://www.srivishnu.edu.in/wp-content/uploads/2018/11/MoA_SVES.jpg"style="height:700px;width:1700px;"></section>
+      </div>
+
+      <div class="item">
+        <section><img src="http://www.srivishnu.edu.in/wp-content/uploads/2018/09/banner4.jpg"  style="height:700px;width:1700px;"></section>
+      </div>
+
+      <div class="item">
+        <section><img src="http://www.srivishnu.edu.in/wp-content/uploads/2018/10/12thApril2018.jpg"  style="height:700px;width:1700px;"></section>
+      </div>
+    
+      <div class="item">
+        <section><img src="http://www.srivishnu.edu.in/wp-content/uploads/2018/10/mou.jpg"  style="height:700px;width:1700px;"></section>
+      </div>
+    </div>
+
+    
+    
+  </div>
+</div>
+
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<div class="card">
+					<div class="sliderText">
+						<img src="https://imgcld.yatra.com/ytimages/image/upload/t_seo_Hotel_w_930_h_550_c_fill_g_auto_q_40_f_jpg/v1435991708/Domestic%20Hotels/Hotels_Chennai/Green%20Meadows%20Resort%20(ECR)/Entrance.jpg" style="width: 400px;
+	height: 250px; ">
+					</div>
+					<div class="content">
+						<i style="color: #2196f3; font-size: 30px;" >Green Meadows</i><br><p style="color: #2196f3; " id="i1">Roots of Learning for the Tree of Opportunities</p>
+						<button type="button" class="btn btn-outline-warning" style="float:center;border-width: 3px;width: 150px;margin-left: 200px;">Discover More...</button>
+					</div>		
+				</div>
+			</div>
+
+			<div class="swiper-slide">
+				<div class="card">
+					<div class="sliderText">
+						<img src="https://images.unsplash.com/photo-1469820578517-4086c8a154df?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" style="width: 400px;
+	height: 250px; " >
+					</div>
+					<div class="content">
+						<i style="color:#e91e63; font-size: 30px;" >Lake View</i><br><p style="color:#e91e63; "id="h1">A Vision of a Better World for Everyone</p>
+						<a href="#"><button type="button" class="btn btn-outline-warning" style="float:center;border-width: 3px;width: 150px;margin-left: 200px;">Discover More...</button></a>
+					</div>		
+				</div>
+			</div>
+
+			<div class="swiper-slide">
+				<div class="card">
+					<div class="sliderText">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Opny1.jpg" style="width: 400px;
+	height: 250px; " >
+					</div>
+					<div class="content">
+						<i style="color:#c3d41a; font-size: 30px;">Orchard Park</i><br><p style="color:#c3d41a; " id="h1">Striving Persistently to Succeed</p>
+						<a href="#"><button type="button" class="btn btn-outline-warning" style="float:center;border-width: 3px;width: 150px;margin-left: 200px;">Discover More...</button></a>
+					</div>		
+				</div>
+			</div>
+
+			<div class="swiper-slide">
+				<div class="card">
+					<div class="sliderText">
+						<img src="https://virtuosoarchitect.co/wp-content/uploads/2018/04/valley-vista-ag-1-1-2048x1365.jpg" style="width: 400px;
+	height: 250px; " >
+					</div>
+					<div class="content">
+						<i style="color: #c33ada; font-size: 30px;">Valley Vista</i><br><p style="color: #c33ada; " id="h1">The Unbreakable Bond of Learning and Leadership</p>
+						<a href="#"><button type="button" class="btn btn-outline-warning" style="float:center;border-width: 3px;width: 150px;margin-left: 200px;">Discover More...</button></a>
+					</div>		
+				</div>
+			</div>	
+
+		</div>
+	</div>
+	<script src="swiper.min.js"></script>
+	<script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 30,
+        stretch: 0,
+        depth: 500,
+        modifier: 1,
+        slideShadows : true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>
+   <img src="https://i.ytimg.com/vi/Lg2EV-AzQJQ/maxresdefault.jpg" alt="" style="width: 1500px; height: 600px; margin-top: -100px; border: 4px solid rgb(222, 227, 235);">
+
+	<br>
+  <br>
+<div class="row">
+  <div class="col-md-1">
+  </div>
+  <div class="col-md-7">
+    <i><h2 style="color:violet;">Welcome to</h2></i>
+      <h1><marquee behavior="scroll" direction="left">Shri Vishnu Educational Society</marquee>
+</h1>
+ 
+
+      <h3><i style="font-family: 'Alegreya', serif;margin-right: -100px;">The society aims and strives for continuous improvement in the field of education and is committed to delivering world class education in various fields to students from different strata.</i></h3><br><br>
+
+      <h4><p style="font-family: 'Arapey', serif;font-size: 20px;">Sri Vishnu Educational Society has stood first among equals because of its quest and hard work to develop as an educational society which stands apart. Our founder chairman, Late. Padma Bhushan Dr. B.V. Raju, through his excellent vision and foresight established many educational institutions. These institutions are play a vital role in molding and shaping the future of thousands of students year after year.</p></h4>
+      <button type="button" class="btn btn-outline-warning" style="float:right;border-width: 3px;width: 150px;"><b>Read More...</b></button>
+      <br>
+      <br>
+      <hr>
+      <img src="http://www.srivishnu.edu.in/wp-content/uploads/2018/07/about-1.png">
+
+      <img src="http://www.srivishnu.edu.in/wp-content/uploads/2018/07/about-2.png" style="margin-left: 50px;">
+      <img src="http://www.srivishnu.edu.in/wp-content/uploads/2018/07/about-3.png" style="margin-left: 50px;">
+      <img src="http://www.srivishnu.edu.in/wp-content/uploads/2018/07/about-4.png" style="margin-left: 50px;"><br>
+      <br>
+      <span>Awards &Â Recognition</span><span style="margin-left: 60px;">e-Brochures</span><span style="margin-left: 120px;">Women Diversity</span><span style="margin-left: 80px;">Lush Green Campuses</span>   
+
+  </div>
+  <div class="col-md-3" style="background-color:rgb(0,0,0,0.9);opacity : 0.9;border-radius: 30%;border: 10px solid rgb(222, 227, 235,0.7);">
+    <div class="row">
+      <div class="col-md-1">
+        
+      </div>
+      <div class="col-md-10">
+        <br>
+    <h3 style="color: green;margin-left: 15px;">Chairman's Message</h3><br>
+    <img src="https://cdn1.iconfinder.com/data/icons/web-design-and-development-4-16/65/159-512.png"style="width: 50px;height: 50px;margin-left: 260px;margin-top: -40px;">
+      <img src="http://srivishnu.edu.in/wp-content/uploads/2016/03/chairman.jpg" style="width: 250px;height: 250px;border-radius: 50%;margin-left: 25px;"><br><br>
+      <h4 style="color: #c9c7bf;font-family: 'Tenali Ramakrishna', sans-serif;">The vision of our Founder Chairman, Padma Bhushan Dr. B. V. Raju, was to develop a disciplined Knowledge Society especially in the field of higher education.</h4><br>
+      <button type="button" class="btn btn-outline-warning" style="float:center;border-width: 3px;width: 150px;margin-left: 70px;">Read More...</button>
+    </div>
+    <div class="col-md-1">
+    </div>
+    </div>
+  </div>
+  <div class="col-md-1">
+  </div>
+</div>
+	<div>
+		<div>
+			<div style="background-color: #a9c726">
+				<div class="row">
+					<h2 class="offer">OFFERS FROM</h2>
+					<br>
+					<br>
+					<br>
+				</div>
+				<div class="row">
+				<div class="col-md-4">
+					<img src="https://tkmce.ac.in/wp-content/uploads/2014/11/placement02.jpg" class="imag">
+					<span><div class="num num1">2000</div></span>				
+					<div class="num2">PLACEMENT EVERY YEAR</div>
+				</div>
+
+				<div class="col-md-4">
+					<img src="https://d8it4huxumps7.cloudfront.net/bites/wp-content/uploads/2019/09/11172817/When-I-cleared-the-CAT-exam-without-leaving-my-job-Karanveers-story1.jpg" class="imag">
+					<div class="num num1">75000</div>
+					<div class="num2">ALUMINI WORLD WIDE</div>
+				</div>
+
+				<div class="col-md-4">
+					<img src="https://i.pinimg.com/originals/4f/c3/7f/4fc37f1721559d0e893cc594a40d2144.png" class="imag">
+					<div class="num num1" style="margin-left: 180px;">250</div>
+					<div class="num2" style="margin-left: 155px;">COMPANIES</div>
+				</div>	
+				<button type="button" class="btn btn-outline-light butt"><b>Read More...</b></button>	
+		</div>
+		</div>
+	</div>
+</div>
+<div class="row c1">
+<div class="col-md-1"></div>
+<div class="col-md-7">
+        <h3>4 INDUSTRY OUTREACH CENTERS <br>For Better Campus Placement <br>Opportunities</h3>
+         <br>
+
+        <h4 style="color: white;font-size: 25px;">SVES has established one of its kind Industry Relations Cell established at Hyderabad, with unflinching support from Liaison Officers located at Chennai, Bangalore, Pune, Vadodara.</h4><br>
+
+        <h5><i style="font-size: 20px;color: white;">The combined work results in our reach spread to more companies throughout the year, hence our students get better employment opportunities in their respective domains.</i><br></h5>
+        
+   </div>
+   <div class="col-md-4">
+    <section><img src="https://img.freepik.com/free-photo/collage-female-is-reading-book_1421-3697.jpg?size=626&ext=jpg" class="c2"></section>
+   </div>
+</div>
+<div class="row">
+
+<div class="container">
+        <h2>A Few Companies that Our Students are Placed In</h2><br><br>
+<div class="row text-center" style="margin-top: 4px;">
+    <div class="col-md-3 col-6">
+        <div class="card bg-dark text-white a1" style="width: 270px;">
+            <img src="http://www.srivishnu.edu.in/wp-content/uploads/2018/08/atslogo-1.jpg" class="card-img-top" >
+            <div class="card-body">
+                <p class="card-text">AUTO MOBILE COMPANY</p>
+            </div>
+    </div>
+    </div>
+
+    <div class="col-md-3 col-6">
+        <div class="card bg-danger text-white a1" style="width: 270px;">
+            <img src="http://www.srivishnu.edu.in/wp-content/uploads/2018/08/genpact.jpg" class="card-img-top" >
+            <div class="card-body">
+                <p class="card-text" style="color: #22bd2a">PRODUCT BASED COMPANY</p>
+            </div>
+    </div>
+    </div>
+
+    <div class="col-md-3 col-6">
+        <div class="card bg-warning text-white a1" style="width: 270px;">
+            <img src="http://www.srivishnu.edu.in/wp-content/uploads/2018/08/icici.jpg" class="card-img-top" >
+            <div class="card-body">
+                <p class="card-text" style="color: #210303">BANKING SERVICES</p>
+            </div>
+    </div>
+    </div>
+
+    <div class="col-md-3 col-6">
+        <div class="card bg-primary text-white a1" style="width: 270px;">
+            <img src="http://www.srivishnu.edu.in/wp-content/uploads/2018/08/otslogo-8.jpg" class="card-img-top" >
+            <div class="card-body">
+                <p class="card-text" style="color: #ab058c">AUTO MOBILE COMPANY</p>
+            </div>
+    </div>
+    </div>
+</div>
+<br>
+<marquee><h1 style="color: green;font-size: 50px;">UpComing Events........</h1></marquee>
+    <div class="row" style="height: 50px;">
+    </div>
+</div>
+</div>
+<br>
+<hr>
+
+<div class="box">
+
+
+		<div class="imgBx">
+			<img src="http://bvrit.ac.in/images/Articles/IT/Webinar_CS.png">
+		</div>
+		<div class="content">
+			<h2 id="e1" style="margin-left: 5px;">Cyber Security - Challenges & Opputunites<br><span class="glyphicon glyphicon-calendar">31-May-2020,31-May-2020</span>
+				<br><span class="glyphicon glyphicon-time"> 11:00AM - 4:30PM</span><br><span> <i class="material-icons">&#xe0c8;</i>B.V Raju Institute Of Technology</span></h2>	
+		</div>
+	</div>
+
+	<div class="box">
+		<div class="imgBx">
+			<img src="http://www.srivishnu.edu.in/wp-content/uploads/2020/03/bvrith-banking-application.jpg">
+		</div>
+		<div class="content">
+			<h2 id="e1" style="margin-left: 10px;">Programming in Banking Applications<br><span class="glyphicon glyphicon-calendar">16-Mar-2020,16-Mar-2020</span>
+				<br><span class="glyphicon glyphicon-time">2:00PM-3:00PM</span><br><span> <i class="material-icons">&#xe0c8;</i>BVRITH Hyderabad College Of Engineering For Women</span></h2>	
+		</div>
+	</div>
+
+	<div class="box">
+		<div class="imgBx">
+			<img src="http://bvrit.ac.in/images/Articles/IT/COviDEthon-2020%20at%2010.00.58%20PM.jpeg">
+		</div>
+		<div class="content">
+			<h2 id="e1" style="margin-left: 10px;">COVIDITHON 2020<br><span class="glyphicon glyphicon-calendar">21-May-2020,23-May-2020</span>
+				<br><span class="glyphicon glyphicon-time">10:00AM - 1 :00 PM</span><br><span> <i class="material-icons">&#xe0c8;</i>Online</span></h2>	
+		</div>
+	</div>
+
+	<button type="button" class="btn btn-outline-warning" style="float:center;border-width: 2px;width: 150px;margin-left: 1200px;margin-top: -10px;height: 50px;font-size: 14px;">VIEW MORE...</button>
+
+	<footer>
+		<div id="footer-area">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-1">
+						<img src="https://www.pngkey.com/png/detail/244-2445261_shri-vishnu-engineering-college-for-women-vishnu-educational.png" style="height: 120px;width: 120px;margin: 0px;margin-left: -100px;border-radius: 50%;">
+					</div>
+					<div class="col-md-5 col-sm-6">
+						<div class="single-footer">
+							
+							<h3 style="color: violet;margin: 0px;">SRI VISHNU EDUCATIONAL SOCIETY</h3>
+							 <p>Plot No. 7 & 8, Nagarjuna Hills
+             Punjagutta Main Road,
+             Hyderabad â€“ 500082.
+            Telangana, India</p>
+							<ul class="footer-social list-inline">
+								<li><a href=""><i class="fab fa-facebook-f" style="color: violet;"></i></a></li>
+								<li><a href=""><i class="fab fa-twitter" style="color: violet;"></i></a></li>
+								<li><a href=""><i class="fab fa-instagram" style="color: violet;"></i></a></li>
+								<li><a href=""><i class="fab fa-linkedin" style="color: violet;"></i></a></li>
+								<li><a href=""><i class="fab fa-youtube" style="color: violet;"></i></a></li>
+								<li><a href=""><i class="fab fa-pinterest" style="color: violet;"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-2 col-sm-6">
+						<div class="single-footer">
+							<h3 style="color: violet;margin: 0px;">PHONES</h3>
+							<ul class="link-area">
+								<li><a href="#"><i class="glyphicon glyphicon-arrow-right"style="color: violet;"></i>(040) 40334899,</a></li>
+								<li><a href="#"><i class="glyphicon glyphicon-arrow-right"style="color: violet;"></i>40334897,</a></li>
+								<li><a href="#"><i class="glyphicon glyphicon-arrow-right"style="color: violet;"></i>40334866,</a></li>
+								<li><a href="#"><i class="glyphicon glyphicon-arrow-right"style="color: violet;"></i>40334829</a></li>
+								<li><a href="#"><i class="glyphicon glyphicon-arrow-right"style="color: violet;"></i>Fax: (040) 40334818,
+            40334848</a></li>
+							</ul>
+						</div>
+					</div>
+
+					
+					<div class="col-md-4">
+					<div id="fb-root" style="margin-left: 30px;"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v7.0"></script>
+<div class="fb-page"
+  data-tabs="timeline,events,messages"
+  data-href="https://www.facebook.com/srivishnueducationalsociety"
+  data-width="350"
+  data-hide-cover="false"></div>
+				</div>
+			</div>
+			</div>
+			<br>
+			<br>
+			<img src="http://srivishnu.edu.in/wp-content/uploads/2018/07/footer-vdc-logo.png" style="margin-left: 0px;">
+    <img src="http://srivishnu.edu.in/wp-content/uploads/2018/07/footer-svcp-logo.png">
+    <img src="http://srivishnu.edu.in/wp-content/uploads/2018/07/footer-svecw.png">
+       <img src="http://www.srivishnu.edu.in/wp-content/uploads/2019/08/footer-vit-logo.png">
+      <img src="http://srivishnu.edu.in/wp-content/uploads/2018/07/footer-bvrice-logo.png">
+      <img src="http://srivishnu.edu.in/wp-content/uploads/2018/07/footer-sbsp-logo.png">
+      <img src="http://srivishnu.edu.in/wp-content/uploads/2018/07/footer-bvrith-logo.png">
+      <img src="http://srivishnu.edu.in/wp-content/uploads/2018/07/footer-bvrit-logo.png">
+      <img src="http://srivishnu.edu.in/wp-content/uploads/2018/07/footer-viper-logo.png">
+      <img src="http://srivishnu.edu.in/wp-content/uploads/2018/07/footer-vedic-logo.png">
+      <hr>
+  
+      
+
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="copyright-area text-center">
+							<p>&copy; Copyrights Â© 2018, Sri Vishnu Educational Society. All rights reserved.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script type="text/javascript">
+	$(".num").counterUp({delay:10,time:1000});
+	</script>
+</body>
+</html>
